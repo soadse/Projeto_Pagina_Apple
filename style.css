@@ -1,0 +1,173 @@
+@charset "UTF-8";
+:root {
+    --corPrincipal: #2F2F30;
+    --corSombra: #44444436;
+    --corBranca: #fff;
+    --corBtn: #0070E1;
+    --corSobraBtn: #004c97;
+    --corDeFundo: #F5F4F7;
+    --mainFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--mainFont);
+}
+
+
+
+
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--corPrincipal);
+    color: var(--corBranca);
+    position: sticky;
+    top: 0;
+}
+#navBar a {
+    color: var(--corBranca);
+    text-decoration: none;
+    padding: 10px;
+    display: none;
+}
+#navBar a:hover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--corBranca);
+    color: var(--corPrincipal);
+    transition: all .5s ease;
+    box-shadow: 0px 0px 10px var(--corPrincipal);
+}
+#navBar img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+#subNav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid var(--corSombra);
+}
+#subNav #subNavTitulo {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#subNav #inSubNav .inSubNavA {
+    display: none;
+}
+#subNav #inSubNav #inSubNavBarBtn {
+    background-color: var(--corBtn);
+    border: none;
+    padding: 6px;
+    width: 100px;
+    border-radius: 50px;
+    color: var(--corBranca);
+    font-weight: bold;
+}
+#subNav #inSubNav #inSubNavBarBtn:hover {
+    background-color: var(--corSobraBtn);
+}
+
+
+
+
+
+#textoPagamento {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--corDeFundo);
+}
+#textoPagamento p a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#escolhaCor #divImgIphone img {
+    width: 100%;
+}
+#escolhaCor #cores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#escolhaCor #cores div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 5px;
+}
+#escolhaCor #cores div .cor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+#escolhaCor #cores div .cor:hover {
+    border: 1px solid var(--corPrincipal);
+    transition: all .5s ease;
+    box-shadow: 1px 2px 5px var(--corPrincipal);
+}
+#escolhaCor #cores div .cor span {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px var(--corPrincipal);
+}
+#escolhaCor #cores div .cor span:hover {
+    box-shadow: none;
+}
+#escolhaCor #cores div .cor.verde span {
+    background-color: #3A4C39; 
+}
+#escolhaCor #cores div .cor.dourado span {
+    background-color: #F9E7CD;
+}
+#escolhaCor #cores div .cor.grafite span {
+    background-color: #54534E;
+}
+#escolhaCor #cores div .cor.azul span {
+    background-color: #A7C0D8;
+}
+
+
+
+
+
+
+
+footer {
+    margin-top: 100px;
+}
