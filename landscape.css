@@ -96,6 +96,7 @@ body {
     background-color: var(--corBtn);
     border: none;
     padding: 6px;
+    margin: 5px;
     width: 100px;
     border-radius: 50px;
     color: var(--corBranca);
