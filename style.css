@@ -17,6 +17,8 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: var(--mainFont);
+    overflow-x: hidden;
+    text-align: center;
 }
 
 
@@ -32,8 +34,9 @@ body {
     padding-bottom: 10px;
     background-color: var(--corPrincipal);
     color: var(--corBranca);
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 #navBar a {
     color: var(--corBranca);
@@ -46,7 +49,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: var(--corBranca);
     color: var(--corPrincipal);
     transition: all .5s ease;
@@ -67,6 +69,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid var(--corSombra);
+    margin-top: 80px;
 }
 #subNav #subNavTitulo {
     font-weight: bolder;
@@ -94,12 +97,41 @@ body {
 
 #textoPagamento {
     width: 100%;
-    text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--corDeFundo);
 }
 #textoPagamento p a{
     text-decoration: none;
+}
+
+
+
+
+
+
+#sectionSobre {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#sectionSobre strong, h1, p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#sectionSobre #preco {
+    color: #4444449a;
+}
+#sectionSobre button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--corBtn);
+    font-size: 1.1rem;
+    color: white;
+}
+#sectionSobre button:hover {
+    background-color: var(--corSobraBtn);
 }
 
 
@@ -118,7 +150,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
 }
 #escolhaCor #cores div {
     display: flex;

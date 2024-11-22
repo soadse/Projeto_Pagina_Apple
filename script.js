@@ -34,6 +34,7 @@ navBarImgOpen.addEventListener('click', () => {
         e.style.display = 'flex'
         navBarImgOpen.style.display = 'none'
     })
+    
 })
 
 navBarImgClose.addEventListener('click', () => {
