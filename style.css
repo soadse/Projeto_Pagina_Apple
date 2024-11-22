@@ -108,9 +108,11 @@ body {
 
 
 
-
-#escolhaCor #divImgIphone img {
+#escolhaCor #divImgIphone #localImg {
     width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
 }
 #escolhaCor #cores {
     display: flex;
@@ -151,6 +153,9 @@ body {
 }
 #escolhaCor #cores div .cor.verde span {
     background-color: #3A4C39; 
+}
+#escolhaCor #cores div .cor.prateado span {
+    background-color: #EFEFEB;
 }
 #escolhaCor #cores div .cor.dourado span {
     background-color: #F9E7CD;
