@@ -91,12 +91,12 @@ body {
 #subNav #inSubNav .inSubNavA {
     text-decoration: none;
     color: var(--corPrincipal);
+    margin: 5px;
 }
 #subNav #inSubNav #inSubNavBarBtn {
     background-color: var(--corBtn);
     border: none;
     padding: 6px;
-    margin: 5px;
     width: 100px;
     border-radius: 50px;
     color: var(--corBranca);
